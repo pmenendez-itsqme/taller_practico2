@@ -98,3 +98,24 @@ body {
     min-width: 1.2rem;
     text-align: center;
 }
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), #0052a3);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
