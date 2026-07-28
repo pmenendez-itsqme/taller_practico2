@@ -98,6 +98,7 @@ body {
     min-width: 1.2rem;
     text-align: center;
 }
+
 .hero {
     background: linear-gradient(135deg, var(--primary-color), #0052a3);
     color: white;
@@ -159,6 +160,7 @@ body {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
 }
+
 .catalog-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -239,6 +241,7 @@ body {
 .sort-container label {
     font-weight: 600;
 }
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -524,6 +527,38 @@ body {
 
 .cart-actions .btn {
     width: 100%;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.notification {
+    position: fixed;
+    top: 80px;
+    right: 2rem;
+    background-color: var(--success-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: slideInTop 0.3s ease;
+    z-index: 150;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
