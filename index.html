@@ -20,6 +20,54 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenido a TechStore</h2>
+                <p>Descubre los mejores productos tecnológicos</p>
+                <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+            </div>
+        </section>
+        <section id="catalogo" class="catalog-section">
+            <div class="catalog-container">
+                <aside class="filters-sidebar">
+                    <h3>Filtros</h3>
+                    <div class="filter-group">
+                        <label for="filter-category">Categoría</label>
+                        <select id="filter-category" class="filter-select">
+                            <option value="">Todas</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="auriculares">Auriculares</option>
+                            <option value="smartphones">Smartphones</option>
+                            <option value="tablets">Tablets</option>
+                        </select>
+                    </div>
 
+                    <div class="filter-group">
+                        <label for="filter-price">Precio máximo: $<span id="price-value">1000</span></label>
+                        <input type="range" id="filter-price" class="filter-range" min="0" max="1000" value="1000">
+                    </div>
+
+                    <button id="reset-filters" class="btn btn-secondary">Limpiar Filtros</button>
+                </aside>
+
+                <section class="products-area">
+                    <div class="products-header">
+                        <h2>Nuestros Productos</h2>
+                        <div class="sort-container">
+                            <label for="sort-select">Ordenar por:</label>
+                            <select id="sort-select" class="filter-select">
+                                <option value="default">Relevancia</option>
+                                <option value="price-asc">Menor precio</option>
+                                <option value="price-desc">Mayor precio</option>
+                                <option value="name-asc">Nombre A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
